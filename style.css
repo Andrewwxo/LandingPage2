@@ -1,3 +1,10 @@
+/** {*/
+/*    outline: 1px solid red*/
+/*}*/
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -15,13 +22,16 @@ div {
 }
 
 header {
-    background: url("./img/orel.jpg") no-repeat center top / cover;
+    background: url(./img/orel.jpg) no-repeat center top / cover;
     /*height: 1134px;*/
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
 }
 
 .logo {
@@ -114,7 +124,7 @@ h2 {
     background: #fff;
     width: 60px;
     height: 3px;
-    bottom: 115px;
+    bottom: 335px;
     left: 50%;
     transform: translate(-50%, 50%);
 
