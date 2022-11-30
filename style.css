@@ -15,7 +15,7 @@ div {
 }
 
 header {
-    background: url("../LandingPage2/img/orel.jpg") no-repeat center top / cover;
+    background: url("./img/orel.jpg") no-repeat center top / cover;
     /*height: 1134px;*/
 }
 
@@ -178,7 +178,7 @@ h2 {
 }
 
 #uniqueDesign {
-    background: url("../LandingPage2/img/Section3wallpaper.jpg");
+    background: url("./img/Section3wallpaper.jpg");
 }
 
 .psevdoElement {
