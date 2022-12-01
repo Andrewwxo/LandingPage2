@@ -2,7 +2,10 @@
 /*    outline: 1px solid red*/
 /*}*/
 
-
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(assets/fonts/MYRIADPRO-BOLD.OTF) format('OTF');
+}
 
 
 body {
@@ -22,7 +25,7 @@ div {
 }
 
 header {
-    background: url(./img/orel.jpg) no-repeat center top / cover;
+    background: url(assets/img/orel.jpg) no-repeat center top / cover;
     /*height: 1134px;*/
 }
 
@@ -71,10 +74,12 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
+
 }
 
 a:focus {
     color: #dec751;
+    border-bottom: 1px solid #dec751;
 }
 
 .tittle-first {
@@ -131,32 +136,41 @@ h2 {
 }
 
 .infoUnderTittle {
-    font-family: 'Montserrat', sans-serif;
+    opacity: 0.7;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
     padding: 0;
     margin-top: 160px;
-    margin-bottom: 160px;
+    margin-bottom: 0px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 .infoUnderTittle li {
     margin-top: 20px;
     margin-bottom: 25px;
-    display: inline-block;
-    justify-content: left;
+    /*display: inline-block;*/
+    /*justify-content: left;*/
     font-size: 15px;
     margin-right: 25px;
+    list-style-type: none;
 }
 
 .infoBold {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
 }
+
 .imgMinusTop {
     width: 270px;
     position: relative;
     margin-bottom: 15px;
 }
+
 .firstChildMinus {
     position: absolute;
     float: left;
@@ -164,31 +178,35 @@ h2 {
     padding: 0;
     height: 4px;
 }
+
 .tittle {
     padding-top: 0px;
 }
 
 .tittle h2 {
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
     text-transform: uppercase;
-    margin: 0;
-    color: #333333
+    color: #333333;
+    margin-top: 23px;
 }
 
 .tittleBottom1st {
-    font-family: 'Kaushan Script', cursive;
-    /*margin: 0 auto;*/
-    margin-top: 90px;
-    margin-bottom: 23px;
-    font-size: 19px;
-    text-align: center;
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
     color: #333333;
+    padding-top: 90px;
+    margin-bottom: 23px;
+    text-align: center;
 }
 
 #uniqueDesign {
-    background: url("./img/Section3wallpaper.jpg");
+    background: url("assets/img/Section3wallpaper.png");
+    height: 850px;
 }
 
 .psevdoElement {
@@ -211,6 +229,7 @@ h2 {
 .picsShadow {
     box-shadow: 11px 11px 14px #95e1d3;
 }
+
 .pics2section {
     float: left;
     position: relative;
@@ -234,40 +253,53 @@ h2 {
 .pics2section:last-child {
     float: right;
 }
+
 .pics2section:nth-child(2) {
     margin-left: 30px;
 }
+
 .bottom2section {
-    font-family:'Montserrat', sans-serif ;
-    color: white;
     background-color: #95e1d3;
     height: 270px;
-    font-weight: bold;
-    font-size: 10px;
     text-align: center;
+    margin-top: 90px;
+    margin-bottom: 29px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
     text-transform: uppercase;
-    margin-top: 110px;
-
+    color: #ffffff;
 }
-.bottom2section li{
+
+.bottom2section li {
     float: left;
     display: inline-block;
     margin-top: 80px;
-    font-size: 10px;
-    margin-right: 60px;
-    margin-left: 60px;
+    font-size: 14px;
+    margin-right: 50px;
+    margin-left: 45px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
 
 }
-.bottom2section b {
-    font-size: 55px;
+
+.bottom2section span {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
 }
-.services_item {
-    width: 330px;
-    float: left;
-    text-align: left;
-    margin-top: 0;
-    margin-left: 30px;
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
 }
+
 .services_item h3 {
     font-family: 'Myriad Pro', sans-serif;
     font-size: 15px;
@@ -276,13 +308,48 @@ h2 {
     margin-bottom: 0px;
     /*font-weight: normal;*/
 }
-.services_item p{
+
+.services_item p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #b3b3b3;
     margin-top: 15px;
 }
+
 .imgLeft {
     float: left;
     margin-top: 20px;
+}
+
+.services_items {
+    display: flex;
+}
+
+.services_item {
+    width: 325px;
+    /*float: left;*/
+    text-align: left;
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.img-holder {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    position: relative;
+}
+
+.img3section1 {
+    position: absolute;
+    z-index: 0;
+    top: -28px;
+    left: 350px;
+}
+
+.img3section2 {
+    position: absolute;
+    z-index: 999;
+    top: 175px;
+    left: 735px;
+    border-radius: 28px;
 }
