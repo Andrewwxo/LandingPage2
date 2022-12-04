@@ -7,7 +7,16 @@
     src: url(assets/fonts/MYRIADPRO-BOLD.OTF) format('opentype');
 }
 
-
+@media (max-width: 1300px ){
+    .galery-content {
+        display: block;
+    }
+    .galery, .galery2, .galery3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 body {
     margin: 0;
     padding: 0;
@@ -97,7 +106,7 @@ h1 {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    position: relative;
+
 }
 
 h2 {
@@ -122,6 +131,7 @@ h2 {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
+    position: relative;
 }
 
 .tittle-first::before {
@@ -130,7 +140,7 @@ h2 {
     background: #fff;
     width: 60px;
     height: 3px;
-    bottom: 315px;
+    bottom: 280px;
     left: 50%;
     transform: translate(-50%, 50%);
 }
@@ -190,7 +200,7 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
     color: #333333;
-    margin-top: 23px;
+    margin-top: 0px;
 }
 
 .tittleBottom1st {
@@ -210,7 +220,7 @@ h2 {
 }
 
 .psevdoElement {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 45px;
     display: flex;
     justify-content: center;
@@ -228,6 +238,7 @@ h2 {
 
 .picsStory {
     margin-bottom: 105px;
+    display: flex;
 }
 
 .picsShadow {
@@ -256,6 +267,7 @@ h2 {
 
 .pics2section:last-child {
     float: right;
+    margin-left: 30px;
 }
 
 .pics2section:nth-child(2) {
@@ -366,9 +378,9 @@ h2 {
     font-weight: 400;
     color: #333333;
     padding-top: 90px;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     text-align: center;
-    margin-top: 37px;
+    margin-top: 35px;
 }
 
 .img4section-folder {
@@ -411,6 +423,7 @@ h2 {
 
 .img4section {
     padding: 15px;
+    position: relative;
 }
 
 .img4secBig {
@@ -422,21 +435,25 @@ h2 {
     justify-content: space-between;
     width: 518px;
 }
-.imgArrow{
+
+.imgArrow {
     margin: 25px;
 }
 
 .textLine {
     margin-right: 30px;
-    position: relative;
+
 }
+
 .textLineBlue {
     position: absolute;
-    right: 129px;
+    right: 395px;
 }
+
 .sectSpace2and3 {
     margin-bottom: 10px;
 }
+
 .spase3and4sec {
     display: flex;
     justify-content: left;
@@ -451,19 +468,22 @@ h2 {
 }
 
 .bottomSect4 {
-    background-color: #eae9e9;
+    background-color: #f8f8f8;
     margin-top: 120px;
 }
 
 .bottom4section-folder {
+    width: 1200px;
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content: center;
 }
+
 .imgBottom4section {
     position: relative;
     margin-top: 70px;
     margin-bottom: 70px;
 }
+
 .imgDialogs {
     position: absolute;
     top: 50%;
@@ -471,9 +491,10 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.textDialogs4section{
+.textDialogs4section {
     margin-left: 61px;
 }
+
 .textDialogs4section p {
     font-family: Roboto;
     font-size: 24px;
@@ -484,6 +505,7 @@ h2 {
     text-align: left;
     padding-top: 0px;
     margin-top: 80px;
+    width: 700px;
 
 }
 
@@ -495,8 +517,289 @@ h2 {
     color: #333333;
 
 }
+
 .imgArrowLeftRight {
     margin-right: 75px;
     margin-left: 75px;
     margin-top: 134px;
+}
+
+.logosOnImg1sec5 {
+    display: flex;
+    background-color: #fce38a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoFacebook {
+    width: 56px;
+    height: 56px;
+    background-color: #f38181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook {
+    width: 13px;
+    height: 26px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.logoSSocial {
+    border: 1px solid #f38181;
+    background-color: #fce38a;
+    padding: 14px;
+    opacity: 0.5;
+}
+
+.logoSocial {
+    width: 26px;
+    height: 22px;
+}
+
+.img5sec-folder {
+   display: flex;
+}
+
+.img5section {
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+}
+.fontMembersTeam {
+    margin-top: 31px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+.fontMembersTeam span {
+    padding-top: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+.bottom5section {
+    width:1920px;
+    height: 250px;
+    background-color: #f8f8f8;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+.bottomSect5 {
+    width: 1212px;
+    background-color: #f8f8f8;
+    margin-top: 118px;
+}
+.logosBottom5sec {
+    margin-top: 51px;
+    margin-bottom: 51px;
+    width: 1212px;
+    height: 149px;
+    opacity: 0.8;
+}
+.galery-content {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.imgWithText {
+    position: relative;
+    text-align: center;
+}
+.pics6section {
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+.locatedOnImg6sec {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.locatedOnImg6sec p {
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.locatedOnImg6sec span {
+    padding-top: 10px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #ffffff;
+    letter-spacing: 0px;
+}
+.imgWithText {
+    width: 30px;
+    height: 30px;
+}
+
+.galery {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom6section-folder {
+    width: 1200px;
+    display: flex;
+    margin-top: 100px;
+}
+.bg7section {
+    background: url("assets/img/bg7section.jpg");
+}
+.people {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.descriptionPeople {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.psevdoElForPeople {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.name {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333333;
+    padding-bottom: 5px;
+    ont-weight: bold;
+}
+.name2 {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+}
+.descriptionPeople p {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+}
+.peopleSay {
+    display: flex;
+    justify-content: space-between;
+}
+.peopleRight {
+    margin-left: 60px;
+}
+.sec8descriptionTitle {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: left;
+}
+.sec8description {
+    text-align: left;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.logosOnImg1sec5 {
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    background-color: #95e1d3;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.img8sec1 {
+    position: relative;
+}
+.dateFor8sec {
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.monthFor8sec {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: none;
+    color: #ffffff
+}
+.bottomImg8sec {
+    margin-top: 15px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+.bottom8sec {
+    background: url("assets/img/img8secBottom.jpg");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.85);;
+}
+.openMap {
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f38181;
+}
+.psevdoElement8sec {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.pointInMap {
+    margin-top: 57px;
+    margin-bottom: 18px;
 }
