@@ -7,16 +7,6 @@
     src: url(assets/fonts/MYRIADPRO-BOLD.OTF) format('opentype');
 }
 
-@media (max-width: 1300px ){
-    .galery-content {
-        display: block;
-    }
-    .galery, .galery2, .galery3 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 body {
     margin: 0;
     padding: 0;
@@ -134,13 +124,13 @@ h2 {
     position: relative;
 }
 
-.tittle-first::before {
+.button::before {
     content: '';
     position: absolute;
     background: #fff;
     width: 60px;
     height: 3px;
-    bottom: 280px;
+    bottom: 135px;
     left: 50%;
     transform: translate(-50%, 50%);
 }
@@ -442,6 +432,7 @@ h2 {
 
 .textLine {
     margin-right: 30px;
+    position: relative;
 
 }
 
@@ -562,7 +553,7 @@ h2 {
 }
 
 .img5sec-folder {
-   display: flex;
+    display: flex;
 }
 
 .img5section {
@@ -570,6 +561,7 @@ h2 {
     height: 470px;
     background-color: #95e1d3;
 }
+
 .fontMembersTeam {
     margin-top: 31px;
     font-family: Montserrat;
@@ -579,6 +571,7 @@ h2 {
     text-transform: uppercase;
     color: #333333;
 }
+
 .fontMembersTeam span {
     padding-top: 15px;
     font-family: Roboto;
@@ -588,19 +581,22 @@ h2 {
     font-style: italic;
     color: #999999;
 }
+
 .bottom5section {
-    width:1920px;
+    width: 1920px;
     height: 250px;
     background-color: #f8f8f8;
     /*display: flex;*/
     /*justify-content: space-between;*/
     /*align-items: center;*/
 }
+
 .bottomSect5 {
     width: 1212px;
     background-color: #f8f8f8;
     margin-top: 118px;
 }
+
 .logosBottom5sec {
     margin-top: 51px;
     margin-bottom: 51px;
@@ -608,6 +604,7 @@ h2 {
     height: 149px;
     opacity: 0.8;
 }
+
 .galery-content {
     display: flex;
     justify-content: center;
@@ -618,11 +615,13 @@ h2 {
     position: relative;
     text-align: center;
 }
+
 .pics6section {
     padding: 0;
     position: relative;
     text-align: center;
 }
+
 .locatedOnImg6sec {
     padding: 10px;
     position: absolute;
@@ -640,6 +639,7 @@ h2 {
     text-transform: uppercase;
     color: #ffffff;
 }
+
 .locatedOnImg6sec span {
     padding-top: 10px;
     font-family: Roboto;
@@ -650,6 +650,7 @@ h2 {
     color: #ffffff;
     letter-spacing: 0px;
 }
+
 .imgWithText {
     width: 30px;
     height: 30px;
@@ -665,9 +666,11 @@ h2 {
     display: flex;
     margin-top: 100px;
 }
+
 .bg7section {
     background: url("assets/img/bg7section.jpg");
 }
+
 .people {
     display: flex;
     justify-content: flex-start;
@@ -679,10 +682,12 @@ h2 {
     text-align: left;
     margin-bottom: 60px;
 }
+
 .psevdoElForPeople {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .name {
     font-family: Montserrat;
     font-size: 16px;
@@ -693,6 +698,7 @@ h2 {
     padding-bottom: 5px;
     ont-weight: bold;
 }
+
 .name2 {
     font-family: Roboto;
     font-size: 14px;
@@ -701,6 +707,7 @@ h2 {
     font-style: italic;
     color: #333333;
 }
+
 .descriptionPeople p {
     margin: 0;
     font-family: Roboto;
@@ -709,13 +716,16 @@ h2 {
     font-weight: 400;
     color: #999999;
 }
+
 .peopleSay {
     display: flex;
     justify-content: space-between;
 }
+
 .peopleRight {
     margin-left: 60px;
 }
+
 .sec8descriptionTitle {
     margin-left: 0;
     margin-top: 10px;
@@ -728,6 +738,7 @@ h2 {
     color: #333333;
     text-align: left;
 }
+
 .sec8description {
     text-align: left;
     font-family: Roboto;
@@ -739,7 +750,7 @@ h2 {
     padding-bottom: 15px;
 }
 
-.logosOnImg1sec5 {
+.logosOnImg1sec8 {
     width: 60px;
     height: 70px;
     display: flex;
@@ -748,12 +759,14 @@ h2 {
     padding: 5px;
     background-color: #95e1d3;
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 41%;
+    left: -3%;
 }
+
 .img8sec1 {
     position: relative;
 }
+
 .dateFor8sec {
     font-family: Montserrat;
     font-size: 30px;
@@ -762,6 +775,7 @@ h2 {
     text-transform: uppercase;
     color: #ffffff;
 }
+
 .monthFor8sec {
     font-family: Roboto;
     font-size: 15px;
@@ -770,6 +784,7 @@ h2 {
     text-transform: none;
     color: #ffffff
 }
+
 .bottomImg8sec {
     margin-top: 15px;
     text-align: left;
@@ -780,13 +795,17 @@ h2 {
     font-style: italic;
     color: #999999;
 }
+
 .bottom8sec {
+    margin-top: 120px;
     background: url("assets/img/img8secBottom.jpg");
+    height: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(255,255,255,0.85);;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);;
 }
+
 .openMap {
     font-family: Montserrat;
     font-size: 24px;
@@ -795,11 +814,253 @@ h2 {
     text-transform: uppercase;
     color: #f38181;
 }
+
 .psevdoElement8sec {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 60px;
 }
+
 .pointInMap {
     margin-top: 57px;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    /*padding-bottom: 100px;*/
+}
+.leftPartFooter{
+    width: 460px;
+}
+.centralPartFooter {
+    width: 340px;
+    margin-left: 45px;
+}
+.rightPartFooter {
+    margin-left: 70px;
+    /*max-width: 270px;*/
+}
+.partsFooter {
+    display: flex;
+    margin-top: 74px;
+    justify-content: space-between;
+}
+
+.textlogoMogoFooter {
+    font-family: Montserrat;
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #cccccc;
+    margin-bottom: 42px;
+}
+
+.textFooter {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.textFollowers {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 50px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.textFollowers span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.textFollowUs {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.logoFooter {
+    margin-left: 10px;
+}
+
+.logosFooter {
+    /*width: 16px;*/
+    /*height: 14px;*/
+    /*background-color: #95e1d3;*/
+}
+
+.followUs {
+    display: flex;
+    justify-content: left;
+    width: 310px;
+    margin-top: 16px;
+    margin-bottom: 38px;
+}
+
+.buttonEmail {
+    width: 230px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+}
+
+.inputFooter {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #cccccc;
+    border: none;
+    padding: 8px;
+    width: 230px;
+    height: 40px;
+}
+
+.buttonSubscribe {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSubscribe {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    padding-left: 0;
+    text-decoration: none;
+    /*text-align: center;*/
+}
+
+.buttonsForBottom {
+    display: flex;
+}
+
+.tittleCentralPartFooter {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.text1footer {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    /*width: 193px;*/
+    /*height: 27px;*/
+    /*margin-bottom: 5px;*/
+}
+
+.text2footer {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.folderForTextImgFooter {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.imgPlusText {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.tittleCentralPartFooter {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.lastText {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+.lastText span {
+    color: #f38181;
+}
+
+.lastDiv {
+    /*width: 1920px;*/
+    height: 100px;
+    background-color: #f8f8f8;
+}
+
+.textRightPartBottom {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+    padding-top: 10px;
+}
+.imgRightPart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 270px;
+}
+.item {
+    flex: 0 1 calc(100%/3 - 2px*2);
+    margin: 2px;
+}
+
+.item-box {
+    width: 100%;
+    text-align: center;
+}
+
+.item-box img {
+    width: 100%;
+}
+
+@media (max-width: 1300px ) {
+    .container{
+
+    }
+    .galery-content {
+        display: block;
+    }
+
+    .galery, .galery2, .galery3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
