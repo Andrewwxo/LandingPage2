@@ -26,6 +26,7 @@ div {
 header {
     background: url(assets/img/orel.jpg) no-repeat center top / cover;
     /*height: 1134px;*/
+    width: 100%;
 }
 
 .container {
@@ -41,6 +42,12 @@ header {
     float: left;
     margin-left: 0;
     height: 25px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    height: 27px;
+    transition: 0.5s;
 }
 
 .navImg {
@@ -49,6 +56,12 @@ header {
     width: 21px;
     height: 18px;
     margin-top: 3px;
+}
+
+.navImg:hover {
+    height: 25px;
+    width: 29px;
+    transition: 0.5s;
 }
 
 nav {
@@ -79,6 +92,11 @@ nav {
 a:focus {
     color: #dec751;
     border-bottom: 1px solid #dec751;
+}
+
+a:hover {
+    font-size: 17px;
+    transition: 0.5s;
 }
 
 .tittle-first {
@@ -229,6 +247,7 @@ h2 {
 .picsStory {
     margin-bottom: 105px;
     display: flex;
+    cursor: pointer;
 }
 
 .picsShadow {
@@ -263,40 +282,44 @@ h2 {
 .pics2section:nth-child(2) {
     margin-left: 30px;
 }
-
-.bottom2section {
+.bottom2section-holder {
     background-color: #95e1d3;
-    height: 270px;
+    display: flex;
+    justify-content: center;
+}
+.bottom2section {
+    display: flex;
+    vertical-align: middle;
+}
+
+.numberText2sec {
+    padding-top: 89px;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 29px;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.bottom2section li {
-    float: left;
-    display: inline-block;
-    margin-top: 80px;
-    font-size: 14px;
-    margin-right: 50px;
-    margin-left: 45px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
+    width: 240px;
+    height: 270px;
+    border-right: 0.1px solid rgb(238, 234, 234);
+    border-left: 0.1px solid rgb(238, 234, 234);
+    /*box-shadow: 0 0 8px rgb(238, 234, 234);*/
 
 }
 
-.bottom2section span {
+.bottom2sectionNumber {
+    font-family: Montserrat;
     font-size: 72px;
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.bottom2sectionText {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 90px;
 }
 
 .services {
@@ -329,6 +352,7 @@ h2 {
 
 .services_items {
     display: flex;
+
 }
 
 .services_item {
@@ -337,6 +361,7 @@ h2 {
     text-align: left;
     margin-top: 0;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .img-holder {
@@ -398,17 +423,39 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     color: #1e1d1d;
+    height: 60px;
+    cursor: pointer;
+
 }
 
-.sect4-item span {
+.textWithScroll {
+    border: 1px solid #cccccc;
     font-family: Roboto;
     font-size: 15px;
     line-height: 24px;
     font-weight: 300;
     font-style: italic;
     color: #999999;
-    /*padding: 15px;*/
-    text-align: center;
+    padding: 20px;
+    overflow: auto;
+    height: 180px;
+    /*width: 525px;*/
+    text-align: left;
+}
+
+.textWithScroll::-webkit-scrollbar {
+    width: 6px; /* ширина всей полосы прокрутки */
+}
+
+.textWithScroll::-webkit-scrollbar-track {
+    background: #f5f5f5; /* цвет зоны отслеживания */
+
+}
+
+.textWithScroll::-webkit-scrollbar-thumb {
+    background-color: #95e1d3; /* цвет бегунка */
+    border-radius: 20px; /* округлось бегунка */
+    /*border: 1px solid #95e1d3; !* отступ вокруг бегунка *!*/
 }
 
 .img4section {
@@ -430,16 +477,16 @@ h2 {
     margin: 25px;
 }
 
-.textLine {
-    margin-right: 30px;
-    position: relative;
+/*.textLine {*/
+/*    margin-right: 30px;*/
+/*    position: relative;*/
 
-}
+/*}*/
 
-.textLineBlue {
-    position: absolute;
-    right: 206px;
-}
+/*.textLineBlue {*/
+/*    position: absolute;*/
+/*    right: 206px;*/
+/*}*/
 
 .sectSpace2and3 {
     margin-bottom: 10px;
@@ -456,6 +503,7 @@ h2 {
     text-transform: uppercase;
     color: #1e1d1d;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .bottomSect4 {
@@ -522,6 +570,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 .logoFacebook {
@@ -531,6 +580,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .facebook {
@@ -545,6 +595,7 @@ h2 {
     background-color: #fce38a;
     padding: 14px;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .logoSocial {
@@ -638,6 +689,7 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .locatedOnImg6sec span {
@@ -813,6 +865,7 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
     color: #f38181;
+    cursor: pointer;
 }
 
 .psevdoElement8sec {
@@ -826,17 +879,21 @@ h2 {
     border-bottom: 1px solid #e5e5e5;
     /*padding-bottom: 100px;*/
 }
-.leftPartFooter{
+
+.leftPartFooter {
     width: 460px;
 }
+
 .centralPartFooter {
     width: 340px;
     margin-left: 45px;
 }
+
 .rightPartFooter {
     margin-left: 70px;
     /*max-width: 270px;*/
 }
+
 .partsFooter {
     display: flex;
     margin-top: 74px;
@@ -850,6 +907,7 @@ h2 {
     font-weight: 700;
     color: #cccccc;
     margin-bottom: 42px;
+    cursor: pointer;
 }
 
 .textFooter {
@@ -890,9 +948,7 @@ h2 {
 }
 
 .logosFooter {
-    /*width: 16px;*/
-    /*height: 14px;*/
-    /*background-color: #95e1d3;*/
+    cursor: pointer;
 }
 
 .followUs {
@@ -923,6 +979,11 @@ h2 {
     height: 40px;
 }
 
+.inputFooter:hover {
+    color: #95e1d3;
+    border: 1px solid #95e1d3;
+}
+
 .buttonSubscribe {
     width: 150px;
     height: 40px;
@@ -943,6 +1004,10 @@ h2 {
     padding-left: 0;
     text-decoration: none;
     /*text-align: center;*/
+}
+
+.btnSubscribe:hover {
+    font-size: 18px;
 }
 
 .buttonsForBottom {
@@ -989,6 +1054,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+.imgCenralPartFooter {
+    cursor: pointer;
+}
+
 .tittleCentralPartFooter {
     font-family: Montserrat;
     font-size: 14px;
@@ -1030,14 +1099,17 @@ h2 {
     color: #333333;
     padding-top: 10px;
 }
+
 .imgRightPart {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 270px;
+    cursor: pointer;
 }
+
 .item {
-    flex: 0 1 calc(100%/3 - 2px*2);
+    flex: 0 1 calc(100% / 3 - 2px * 2);
     margin: 2px;
 }
 
@@ -1051,9 +1123,10 @@ h2 {
 }
 
 @media (max-width: 1300px ) {
-    .container{
+    .container {
 
     }
+
     .galery-content {
         display: block;
     }
