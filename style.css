@@ -28,21 +28,35 @@ header {
     /*height: 1134px;*/
     width: 100%;
 }
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eba185;
+    z-index: 2;
+}
 
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content:space-between ;
+    height: 80px;
+    align-items: center;
+}
+.header_logo {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
-}
-
-.logo {
-    margin-top: 45px;
-    float: left;
-    margin-left: 0;
-    height: 25px;
-    cursor: pointer;
 }
 
 .logo:hover {
@@ -64,29 +78,24 @@ header {
     transition: 0.5s;
 }
 
-nav {
-    float: right;
-    margin-top: 40px;
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
 }
-
-.menu {
-    padding: 0;
-    margin-top: 40px;
-    display: block;
-}
-
-.menu li {
-    float: left;
-    display: block;
+.header_list li {
+    list-style: none;
     margin-right: 55px;
+    padding-top: 20px;
 }
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
+.header_link {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
     text-transform: uppercase;
-    font-size: 15px;
-
+    color: #ffffff;
+    text-decoration: none;
 }
 
 a:focus {
@@ -114,7 +123,6 @@ h1 {
     color: white;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 h2 {
@@ -282,11 +290,13 @@ h2 {
 .pics2section:nth-child(2) {
     margin-left: 30px;
 }
+
 .bottom2section-holder {
     background-color: #95e1d3;
     display: flex;
     justify-content: center;
 }
+
 .bottom2section {
     display: flex;
     vertical-align: middle;
@@ -477,17 +487,6 @@ h2 {
     margin: 25px;
 }
 
-/*.textLine {*/
-/*    margin-right: 30px;*/
-/*    position: relative;*/
-
-/*}*/
-
-/*.textLineBlue {*/
-/*    position: absolute;*/
-/*    right: 206px;*/
-/*}*/
-
 .sectSpace2and3 {
     margin-bottom: 10px;
 }
@@ -656,6 +655,10 @@ h2 {
     opacity: 0.8;
 }
 
+.logosBottom5sec:hover {
+    border: 1px dashed #a89d9d; /* Ширина, вид и цвет рамки */
+}
+
 .galery-content {
     display: flex;
     justify-content: center;
@@ -733,6 +736,7 @@ h2 {
     flex-direction: column;
     text-align: left;
     margin-bottom: 60px;
+    cursor: pointer;
 }
 
 .psevdoElForPeople {
@@ -1047,6 +1051,7 @@ h2 {
 .folderForTextImgFooter {
     text-align: left;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .imgPlusText {
@@ -1122,6 +1127,153 @@ h2 {
     width: 100%;
 }
 
+.beauty-rotate {
+    /*width: 300px;*/
+    /*height: 300px;*/
+    /*border: 4px double #bd6c46; !* Рамка *!*/
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.beauty-rotate:hover {
+    border-radius: 12%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+img.small-rotate {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+img.small-rotate:hover {
+    -webkit-transform: rotate(-15deg); /* Градусы поворота можно изменить по необходимости */
+    transform: rotate(-15deg); /* Градусы поворота можно изменить по необходимости */
+}
+
+.grey-image {
+    filter: grayscale(1); /* Черно-белый фильтр для изображения */
+    transition: 1s; /* Время изменения цвета изображения */
+}
+
+.grey-image:hover {
+    filter: grayscale(0); /* Цветное изображение при наведении */
+}
+
+.hover-effect-cover > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hover-effect-cover:hover > div.effect-to-right {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hover-effect-cover div.effect-to-right {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+
+.hover-effect-cover:hover div.effect-to-right {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+.hover-effect-cover > div.effect-to-top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hover-effect-cover:hover > div.effect-to-top {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hover-effect-cover div.effect-to-top {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+
+.hover-effect-cover:hover div.effect-to-top {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+.hover-effect-cover > div.effect-to-left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hover-effect-cover:hover > div.effect-to-left {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hover-effect-cover div.effect-to-left {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+
+.hover-effect-cover:hover div.effect-to-left {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+img.rotate-img {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+img.rotate-img:hover {
+    -webkit-transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+    transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+}
+
+.hover-image-scale {
+    /*display: inline-block;*/
+    /*overflow: hidden; !* Скрываем всё за контуром *!*/
+}
+
+.hover-image-scale img {
+    transition: 1s; /* Время эффекта */
+    /*display: block;*/
+    cursor: pointer;
+}
+
+.hover-image-scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
 @media (max-width: 1300px ) {
     .container {
 
@@ -1135,5 +1287,83 @@ h2 {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    body.lock{
+        overflow: hidden;
+    }
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header_burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before,
+    .header_burger:after {
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .header_burger:before {
+        top: 0;
+    }
+
+    .header_burger:after {
+        bottom: 0;
+    }
+    .header_burger.active span {
+        transform:scale(0);
+    }
+
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow:auto;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.3s ease 0.3s;
+    }
+    .header-menu.active {
+        top: 0;
+    }
+    .header_body {
+        height: 50px;
+    }
+    .header_list {
+        display: block;
+    }
+    .header_list li {
+        margin: 0 0 20px 0;
+    }
+    .header_logo {
+        flex: 0 0 100px;
     }
 }

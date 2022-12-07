@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +16,21 @@
 
 <header>
     <div class="container">
-        <div class="heading clearfix">
-            <img src="assets/img/MoGo_logo.png" alt="MoGo" class="logo">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#"><img src="assets/img/groceryTrolley.png" alt="grocery trolley" class="navImg"></a>
+        <div class="header_body">
+            <a class="header_logo" href="#"><img src="assets/img/MoGo_logo.png" alt="MoGo"></a>
+            <div class="header_burger">
+                <span></span>
+            </div>
+            <nav class="header_menu">
+                <ul class="header_list">
+                    <li><a class="header_link" href="#">About</a></li>
+                    <li><a class="header_link" href="#">Service</a></li>
+                    <li><a class="header_link" href="#">Work</a></li>
+                    <li><a class="header_link" href="#">Blog</a></li>
+                    <li><a class="header_link" href="#">Contact</a></li>
+                    <li><a href="#"><img src="assets/img/groceryTrolley.png" alt="grocery trolley" class="navImg header_link"></a>
                     </li>
-                    <li><a href="#"><img src="assets/img/magnifyingGlass.png" alt="magnifying glass" class="navImg"></a>
+                    <li><a href="#"><img src="assets/img/magnifyingGlass.png" alt="magnifying glass" class="navImg header_link"></a>
                     </li>
                 </ul>
             </nav>
@@ -75,15 +79,15 @@
             maiores odit provident quasi qui quidem rerum tempora unde veniam.
         </div>
         <div class="picsStory clearfix">
-            <div class="pics2section">
-                <img class="picsShadow" src="assets/img/pics1.jpg" alt="picture 1">
+            <div class="pics2section ">
+                <img class="picsShadow beauty-rotate" src="assets/img/pics1.jpg" alt="picture 1">
                 <div class="textOnPics1">
                     <img src="assets/img/USERS.png" alt="users">
                     <p>Super Team</p>
                 </div>
             </div>
-            <div class="pics2section"><img src="assets/img/pics2.jpg " alt="picture 2"></div>
-            <div class="pics2section"><img src="assets/img/pics3.jpg" alt="picture 3"></div>
+            <div class="pics2section "><img class="beauty-rotate" src="assets/img/pics2.jpg " alt="picture 2"></div>
+            <div class="pics2section "><img class="beauty-rotate" src="assets/img/pics3.jpg" alt="picture 3"></div>
         </div>
     </div>
 </div>
@@ -109,20 +113,8 @@
             <div class="bottom2sectionNumber">24</div>
             <div class="bottom2sectionText">Members</div>
         </div>
-
-
-        <!--            <ul>-->
-        <!--                <li><span>42</span><br>Web Design Projects</li>-->
-        <!--                <li><span>123</span><br>Happy Client</li>-->
-        <!--                <li><span>15</span><br>Award Winner</li>-->
-        <!--                <li><span>99</span><br>Cup of Coffee</li>-->
-        <!--                <li><span>24</span><br>Members</li>-->
-        <!--            </ul>-->
     </div>
 </div>
-
-
-
 <div class="container">
     <div class="part2">
         <div class="tittle">
@@ -190,8 +182,8 @@
             <img src="assets/img/psevdoElement.png" alt="PsevdoElement">
         </div>
         <div class="img-holder">
-            <img src="assets/img/display.jpg" alt="display" class="img3section1">
-            <img src="assets/img/imgPhone.jpg" alt="phone picture" class="img3section2">
+            <img src="assets/img/display.jpg" alt="display" class="img3section1 small-rotate">
+            <img src="assets/img/imgPhone.jpg" alt="phone picture" class="img3section2 small-rotate">
         </div>
     </div>
 
@@ -212,7 +204,7 @@
             aliquip ex ea commodo consequat.</p>
         <div class="img4section-folder">
             <div class="img4secBig">
-                <img src="assets/img/imgSection4.jpg" alt="Picture is where men stick img">
+                <img class="grey-image" src="assets/img/imgSection4.jpg" alt="Picture is where men stick img">
             </div>
             <div class="section4-items">
                 <div class="sectSpace2and3">
@@ -279,27 +271,32 @@
             aliquip ex ea commodo consequat.
         </div>
         <div class="img5sec-folder">
-            <div class="pics2section">
+            <div class="pics2section hover-effect-cover">
                 <img class="picsShadow" src="assets/img/img1section5.jpg" alt="img1section5">
                 <div class="fontMembersTeam">Matthew Dix <br><span>Graphic Design</span></div>
-                <div class="logosOnImg1sec5">
-                    <div class="logoFacebook"><img class="facebook" src="assets/img/imgFacebook.png"
-                                                   alt="Logo Facebook"></div>
-                    <div class="logoSSocial"><img class="logoSocial" src="assets/img/imgTwitter.png"
-                                                  alt="Logo Twitter">
+                <div class="effect-to-right">
+                    <div class="logosOnImg1sec5 ">
+                        <div class="logoFacebook"><img class="facebook" src="assets/img/imgFacebook.png"
+                                                       alt="Logo Facebook"></div>
+                        <div class="logoSSocial"><img class="logoSocial" src="assets/img/imgTwitter.png"
+                                                      alt="Logo Twitter">
+                        </div>
+                        <div class="logoSSocial"><img class="logoSocial" src="assets/img/pinterest.png"
+                                                      alt="Logo Pinterest"></div>
+                        <div class="logoSSocial"><img class="logoSocial" src="assets/img/instagram.png"
+                                                      alt="Logo Instagram"></div>
                     </div>
-                    <div class="logoSSocial"><img class="logoSocial" src="assets/img/pinterest.png"
-                                                  alt="Logo Pinterest"></div>
-                    <div class="logoSSocial"><img class="logoSocial" src="assets/img/instagram.png"
-                                                  alt="Logo Instagram"></div>
                 </div>
             </div>
-            <div class="pics2section">
+            <div class="pics2section hover-effect-cover">
                 <img src="assets/img/img2section5.jpg" alt="img2section5">
+                <div class="fontMembersTeam effect-to-top">Christopher Campbell <br><span>Branding/UX design</span>
+                </div>
                 <div class="fontMembersTeam">Christopher Campbell <br><span>Branding/UX design</span></div>
             </div>
-            <div class="pics2section">
+            <div class="pics2section hover-effect-cover">
                 <img src="assets/img/img3section5.jpg" alt="img3section5">
+                <div class="fontMembersTeam effect-to-left">Michael Fertig <br><span>Developer</span></div>
                 <div class="fontMembersTeam">Michael Fertig <br><span>Developer</span></div>
             </div>
         </div>
@@ -322,13 +319,13 @@
             aliquip ex ea commodo consequat.</p>
         <div class="galery-content">
             <div class="galery">
-                <img src="assets/img/img6sec1.jpg" alt="Image 1">
-                <img src="assets/img/img6sec5.jpg" alt="Image 5">
+                <img class="grey-image" src="assets/img/img6sec1.jpg" alt="Image 1">
+                <img class="grey-image" src="assets/img/img6sec5.jpg" alt="Image 5">
             </div>
-            <div class="galery2 ">
-                <img src="assets/img/img6sec2.jpg" alt="Image 2">
+            <div class="galery2">
+                <img class="grey-image" src="assets/img/img6sec2.jpg" alt="Image 2">
                 <div class="pics6section">
-                    <img src="assets/img/img6sec6.jpg" alt="Image 6">
+                    <img class="grey-image" src="assets/img/img6sec6.jpg" alt="Image 6">
                     <div class="locatedOnImg6sec">
                         <img class="imgWithText" src="assets/img/logo1Img6sec.png" alt="Logo 6 section">
                         <p>creatively designed <br><span>Lorem ipsum dolor sit</span></p>
@@ -337,17 +334,17 @@
 
             </div>
             <div class="galery3">
-                <img src="assets/img/img6sec3.jpg" alt="Image 3">
+                <img class="grey-image" src="assets/img/img6sec3.jpg" alt="Image 3">
             </div>
             <div class="galery">
-                <img src="assets/img/img6sec4.jpg" alt="Image 4">
-                <img src="assets/img/img6sec7.jpg" alt="Image 7"></div>
+                <img class="grey-image" src="assets/img/img6sec4.jpg" alt="Image 4">
+                <img class="grey-image" src="assets/img/img6sec7.jpg" alt="Image 7"></div>
         </div>
         <div class="container">
             <div class="bottom6section-folder">
                 <div><img class="imgArrowLeftRight" src="assets/img/arrowLeft.png" alt="arrow left"></div>
                 <div class="imgBottom4section">
-                    <img class="imgCircle" src="assets/img/img6sec8.png" alt="image developer">
+                    <img class="rotate-img" class="imgCircle" src="assets/img/img6sec8.png" alt="image developer">
                 </div>
                 <div class="textDialogs4section"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod
@@ -375,7 +372,7 @@
             <div class="peopleLeft">
                 <div class="people">
                     <div class="peopleAva">
-                        <img src="assets/img/people1.png" alt="Avatar 1">
+                        <img class="rotate-img" src="assets/img/people1.png" alt="Avatar 1">
                     </div>
                     <div class="descriptionPeople">
                         <div class="name">Matthew Dix</div>
@@ -390,7 +387,7 @@
                 </div>
                 <div class="people">
                     <div class="peopleAva">
-                        <img src="assets/img/people2.png" alt="Avatar 2">
+                        <img class="rotate-img" src="assets/img/people2.png" alt="Avatar 2">
                     </div>
                     <div class="descriptionPeople">
                         <div class="name">Jaelynn Castillo</div>
@@ -407,7 +404,7 @@
             <div class="peopleRight">
                 <div class="people">
                     <div class="peopleAva">
-                        <img src="assets/img/people3.png" alt="Avatar 3">
+                        <img class="rotate-img" src="assets/img/people3.png" alt="Avatar 3">
                     </div>
                     <div class="descriptionPeople">
                         <div class="name">Nick Karvounis</div>
@@ -421,7 +418,7 @@
                 </div>
                 <div class="people">
                     <div class="peopleAva">
-                        <img src="assets/img/people4.png" alt="Avatar 4">
+                        <img class="rotate-img" src="assets/img/people4.png" alt="Avatar 4">
                     </div>
                     <div class="descriptionPeople">
                         <div class="name">Mike Petrucci</div>
@@ -449,8 +446,8 @@
             <img src="assets/img/psevdoElement.png" alt="PsevdoElement">
         </div>
         <div class="img5sec-folder">
-            <div class="pics2section">
-                <img class="img8sec1" src="assets/img/img1sec8.jpg" alt="img1section8">
+            <div class="pics2section hover-image-scale">
+                <img class="img8sec1 hover-image-scale" src="assets/img/img1sec8.jpg" alt="img1section8">
                 <div class="sec8descriptionTitle">Lorem ipsum dolor sit amet</div>
                 <div class="sec8description"> Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et
@@ -464,8 +461,8 @@
                     <img src="assets/img/comment.png" alt="comment"> 17
                 </div>
             </div>
-            <div class="pics2section">
-                <img class="img8sec1" src="assets/img/img2sec8.jpg" alt="img1section2">
+            <div class="pics2section hover-image-scale">
+                <img class="img8sec1 hover-image-scale" src="assets/img/img2sec8.jpg" alt="img1section2">
                 <div class="sec8descriptionTitle">sed do eiusmod tempor</div>
                 <div class="sec8description"> Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.
@@ -478,8 +475,8 @@
                     <img src="assets/img/comment.png" alt="comment"> 42
                 </div>
             </div>
-            <div class="pics2section">
-                <img class="img8sec1" src="assets/img/img3sec8.jpg" alt="img1section3">
+            <div class="pics2section hover-image-scale">
+                <img class="img8sec1 hover-image-scale" src="assets/img/img3sec8.jpg" alt="img1section3">
                 <div class="sec8descriptionTitle">incididunt ut labore et dolore</div>
                 <div class="sec8description"> Elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
@@ -620,7 +617,7 @@
     <div class="lastDiv"></div>
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
