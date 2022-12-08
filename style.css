@@ -240,7 +240,7 @@ h2 {
 }
 
 #uniqueDesign {
-    background: url("assets/img/Section3wallpaper.png");
+    background: url("assets/img/Section3wallpaper.png") no-repeat center top / cover;
     height: 850px;
 }
 
@@ -771,13 +771,12 @@ h2 {
 }
 
 .bg7section {
-    background: url("assets/img/bg7section.jpg");
+    background: url("assets/img/bg7section.jpg") no-repeat center top / cover;
 }
 
 .people {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .descriptionPeople {
@@ -903,7 +902,7 @@ h2 {
 
 .bottom8sec {
     margin-top: 120px;
-    background: url("assets/img/img8secBottom.jpg");
+    background: url("assets/img/img8secBottom.jpg") no-repeat center top / cover;
     height: 200px;
     text-align: center;
     display: flex;
@@ -1471,9 +1470,15 @@ img.rotate-img:hover {
         left: 20%;
         top: 44%;
     }
+    .people {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 767px) {
+    .peopleSay {
+        flex-wrap: wrap;
+    }
     .logosOnImg1sec8 {
         left: 17%;
         top: 42%;
