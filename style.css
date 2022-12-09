@@ -6,6 +6,7 @@ html {
     overflow-x: hidden;
 
 }
+
 @font-face {
     font-family: 'Myriad Pro';
     src: url(assets/fonts/MYRIADPRO-BOLD.OTF) format('opentype');
@@ -269,18 +270,15 @@ h2 {
     margin-bottom: 105px;
     display: flex;
     cursor: pointer;
-}
-
-.picsShadow {
-    box-shadow: 11px 11px 14px #95e1d3;
+    position: relative;
 }
 
 .pics2section {
-    /*float: left;*/
     position: relative;
     text-align: center;
     width: 100%;
-    margin: 15px;
+    /*height: 100%;*/
+    /*padding: 15px;*/
 }
 
 .textOnPics1 {
@@ -305,7 +303,9 @@ h2 {
 /*.pics2section:nth-child(2) {*/
 /*    margin-left: 30px;*/
 /*}*/
-
+/*.img2part {*/
+/*    margin-right: 5px;*/
+/*}*/
 .bottom2section-holder {
     background-color: #95e1d3;
     display: flex;
@@ -316,7 +316,7 @@ h2 {
 .bottom2section {
     display: flex;
     vertical-align: middle;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .numberText2sec {
@@ -623,6 +623,13 @@ h2 {
 
 .img5sec-folder {
     display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+}
+
+.secondImg {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .img5section {
@@ -1171,38 +1178,6 @@ h2 {
     width: 100%;
 }
 
-.beauty-rotate {
-    width: 100%;
-    overflow: hidden;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.beauty-rotate:hover {
-    border-radius: 12%;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-img.small-rotate {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-img.small-rotate:hover {
-    -webkit-transform: rotate(-15deg); /* Градусы поворота можно изменить по необходимости */
-    transform: rotate(-15deg); /* Градусы поворота можно изменить по необходимости */
-}
-
-.grey-image {
-    filter: grayscale(1); /* Черно-белый фильтр для изображения */
-    transition: 1s; /* Время изменения цвета изображения */
-}
-
-.grey-image:hover {
-    filter: grayscale(0); /* Цветное изображение при наведении */
-}
-
 .hover-effect-cover > div.effect-to-right {
     width: 100%;
     height: 100%;
@@ -1221,100 +1196,19 @@ img.small-rotate:hover {
 
 .hover-effect-cover div.effect-to-right {
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+    max-width: 380px;
+    max-height: 470px;
+    background-color: #95e1d3;
+    background-image: linear-gradient(0.0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);; /* Фон блока при наведении */
     transition: all 0.4s ease-in-out;
     color: #fff;
     transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+    box-shadow: 11px 11px 14px #95e1d3;
 }
 
 .hover-effect-cover:hover div.effect-to-right {
-    opacity: 1;
+    opacity: 0.9;
     transform: translate(0px, 0px) rotate(0deg);
-}
-
-.hover-effect-cover > div.effect-to-top {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.hover-effect-cover:hover > div.effect-to-top {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-
-.hover-effect-cover div.effect-to-top {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
-    transition: all 0.4s ease-in-out;
-    color: #fff;
-    transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
-}
-
-.hover-effect-cover:hover div.effect-to-top {
-    opacity: 1;
-    transform: translate(0px, 0px) rotate(0deg);
-}
-
-.hover-effect-cover > div.effect-to-left {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.hover-effect-cover:hover > div.effect-to-left {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-
-.hover-effect-cover div.effect-to-left {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
-    transition: all 0.4s ease-in-out;
-    color: #fff;
-    transform: translate(250px, 0px) rotate(0deg); /* Направление выезжающей панели */
-}
-
-.hover-effect-cover:hover div.effect-to-left {
-    opacity: 1;
-    transform: translate(0px, 0px) rotate(0deg);
-}
-
-img.rotate-img {
-    border-radius: 50%;
-    /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
-    /*transition: transform .8s ease-in-out;*/
-    margin: 30px;
-}
-
-/*img.rotate-img:hover {*/
-/*    -webkit-transform: rotate(360deg); !* Градусы поворота можно изменить по необходимости *!*/
-/*    transform: rotate(360deg); !* Градусы поворота можно изменить по необходимости *!*/
-/*}*/
-
-.hover-image-scale {
-    /*display: inline-block;*/
-    /*overflow: hidden; !* Скрываем всё за контуром *!*/
-}
-
-.hover-image-scale img {
-    transition: 1s; /* Время эффекта */
-    /*display: block;*/
-    cursor: pointer;
-}
-
-.hover-image-scale img:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */
 }
 
 @media (max-width: 1200px ) {
@@ -1332,7 +1226,10 @@ img.rotate-img {
         /*box-shadow: 0 0 8px rgb(238, 234, 234);*/
 
     }
-
+    .img2part{
+        width: 300px;
+        height: 200px;
+    }
     .img-holder {
         display: flex;
         flex-wrap: wrap;
@@ -1395,8 +1292,20 @@ img.rotate-img {
         height: 41px;
     }
 
-    .img5sec-folder {
-        flex-wrap: wrap;
+    .img5sec {
+        width: 280px;
+        height: 370px;
+    }
+
+    .hover-effect-cover:hover > div.effect-to-right {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    .hover-effect-cover div.effect-to-right {
+        max-width: 280px;
+        max-height: 370px;
     }
 
     .logosBottom5sec {
@@ -1420,9 +1329,18 @@ img.rotate-img {
         margin-left: 0;
 
     }
+
 }
 
 @media (max-width: 992px) {
+
+    .picsStory {
+        flex-wrap: wrap;
+    }
+    .img2part{
+        width: 380px;
+        height: 250px;
+    }
     .container {
         max-width: 750px;
     }
@@ -1469,10 +1387,61 @@ img.rotate-img {
         width: 390px;
         height: 600px;
     }
+    .img5sec-folder {
+        flex-wrap: wrap;
+    }
+    .img5sec {
+        width: 380px;
+        height: 470px;
+    }
+    .hover-effect-cover > div.effect-to-right {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hover-effect-cover:hover > div.effect-to-right {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    .img5sec-folder{
+        position: relative;
+    }
+    .pics-folder{
+        position: relative;
+    }
+
+    .hover-effect-cover div.effect-to-right {
+        opacity: 0;
+        max-width: 380px;
+        max-height: 470px;
+        background-color: #95e1d3;
+        background-image: linear-gradient(0.0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);; /* Фон блока при наведении */
+        transition: all 0.4s ease-in-out;
+        color: #fff;
+        transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+        box-shadow: 11px 11px 14px #95e1d3;
+    }
+
+    .hover-effect-cover:hover div.effect-to-right {
+        opacity: 0.9;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    .pics2section {
+        position: relative;
+        text-align: center;
+    }
+
     .logosOnImg1sec8 {
         left: 20%;
         top: 44%;
     }
+
     .people {
         flex-wrap: wrap;
     }
@@ -1482,10 +1451,15 @@ img.rotate-img {
     .peopleSay {
         flex-wrap: wrap;
     }
+    .pics-folder{
+        position: relative;
+    }
+
     .logosOnImg1sec8 {
         left: 17%;
         top: 42%;
     }
+
     .img3section1 {
         top: 156px;
         left: 170px;
