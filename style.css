@@ -263,7 +263,7 @@ h2 {
     margin-bottom: 60px;
     margin-left: 550px;
     width: 60px;
-    border-bottom: 4px solid #f38181;
+    border-bottom: 3px solid #f38181;
 }
 
 .story {
@@ -543,7 +543,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .imgBottom4section {
@@ -573,11 +573,11 @@ h2 {
     text-align: left;
     padding-top: 0px;
     margin-top: 80px;
-    width: 700px;
+    /*width: 700px;*/
 
 }
 
-.textDialogs4section span {
+.nameInBottom6part {
     font-family: 'Kaushan Script';
     font-size: 24px;
     line-height: 1.2;
@@ -587,8 +587,12 @@ h2 {
 }
 
 .imgArrowLeftRight {
-    margin-right: 75px;
-    margin-left: 75px;
+    margin-left: 40px;
+    margin-top: 134px;
+}
+.imgArrowLeft {
+    margin-right: 70px;
+    margin-left: 20px;
     margin-top: 134px;
 }
 
@@ -637,7 +641,13 @@ h2 {
     /*flex-wrap: wrap;*/
     justify-content: space-between;
 }
-
+.container8part {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
 .secondImg {
     margin-right: 15px;
     margin-left: 15px;
@@ -787,8 +797,29 @@ h2 {
 }
 
 .textDialogs6section {
+    margin: 10px;
 }
+.imgBottom6part {
+    margin: 20px;
+}
+.imgArrowLeft6sec {
+    margin: 20px;
+}
+.borderBottom6part {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 0;
+    width: 60px;
+    border-bottom: 3px solid #f38181;
+}
+.bottomSignature6part {
+    display: flex;
+    align-items: center;
+    justify-content: left;
 
+}
 .textDialogs6section p {
     font-family: Roboto;
     font-size: 24px;
@@ -816,12 +847,15 @@ h2 {
     flex-direction: column;
     text-align: left;
     margin-bottom: 60px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
 .psevdoElForPeople {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60px;
+    border-bottom: 3px solid #f38181;
 }
 
 .name {
@@ -898,9 +932,24 @@ h2 {
     top: 41%;
     left: -3%;
 }
-
+.logosOnImg1sec8Center {
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    background-color: #95e1d3;
+    position: absolute;
+    top: 41%;
+    left: 4%;
+}
 .img8sec1 {
     position: relative;
+}
+.img8secCenter {
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .dateFor8sec {
@@ -922,8 +971,15 @@ h2 {
 }
 
 .bottomImg8sec {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     margin-top: 15px;
-    text-align: left;
+    /*text-align: left;*/
+    }
+
+.bottomImg8sec span{
+    margin-right: 19px;
     font-family: Roboto;
     font-size: 15px;
     line-height: 24px;
@@ -931,14 +987,24 @@ h2 {
     font-style: italic;
     color: #999999;
 }
-
+.eye {
+    width: 20px;
+    height: 12px;
+    margin-right: 7px;
+}
+.comment {
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+}
 .bottom8sec {
+    padding-bottom: 20px;
     margin-top: 120px;
     background: url("assets/img/img8secBottom.jpg") no-repeat center top / cover;
-    height: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);;
 }
 
@@ -950,11 +1016,15 @@ h2 {
     text-transform: uppercase;
     color: #f38181;
     cursor: pointer;
+    padding-top: 18px;
+    margin-bottom: 10px;
 }
 
 .psevdoElement8sec {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    width: 60px;
+    border-bottom: 3px solid #f38181;
 }
 
 .pointInMap {
