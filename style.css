@@ -12,6 +12,14 @@ html {
     src: url(assets/fonts/MYRIADPRO-BOLD.OTF) format('opentype');
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    vertical-align: bottom;
+}
 body {
     margin: 0;
     padding: 0;
@@ -230,7 +238,7 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
     color: #333333;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 .tittleBottom1st {
@@ -250,10 +258,12 @@ h2 {
 }
 
 .psevdoElement {
-    margin-top: 30px;
-    margin-bottom: 45px;
-    display: flex;
-    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-left: 550px;
+    width: 60px;
+    border-bottom: 4px solid #f38181;
 }
 
 .story {
@@ -400,9 +410,10 @@ h2 {
 .img3section1 {
     position: absolute;
     z-index: 0;
-    top: -28px;
+    top: -15px;
     left: 350px;
     border-radius: 28px;
+    /*margin-top: 20px;*/
 }
 
 .img3section2 {
@@ -668,16 +679,19 @@ h2 {
 }
 
 .bottomSect5 {
-    display: flex;
-    justify-content: center;
-    /*max-width: 1212px;*/
     background-color: #f8f8f8;
-    margin-top: 118px;
+    margin-top: 138px;
+
+}
+
+.img5part-folder {
+    padding: 51px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logosBottom5sec {
-    margin-top: 51px;
-    margin-bottom: 51px;
     width: 1212px;
     height: 149px;
     opacity: 0.8;
@@ -696,24 +710,36 @@ h2 {
 .imgWithText {
     position: relative;
     text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 .pics6section {
     padding: 0;
     position: relative;
     text-align: center;
-}
 
+}
+.img6part6{
+    padding: 0;
+    margin: 0;
+}
 .locatedOnImg6sec {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+    height: 390px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%);
 }
 
-.locatedOnImg6sec p {
-    margin-top: 10px;
+.textOnImg6sec6 {
+    padding-top: 15px;
     font-family: Montserrat;
     font-size: 14px;
     line-height: 1.2;
@@ -723,7 +749,7 @@ h2 {
     cursor: pointer;
 }
 
-.locatedOnImg6sec span {
+.text2onImg6sec6 {
     padding-top: 10px;
     font-family: Roboto;
     font-size: 12px;
@@ -732,11 +758,6 @@ h2 {
     font-style: italic;
     color: #ffffff;
     letter-spacing: 0px;
-}
-
-.imgWithText {
-    width: 30px;
-    height: 30px;
 }
 
 .galery {
@@ -1211,6 +1232,37 @@ h2 {
     transform: translate(0px, 0px) rotate(0deg);
 }
 
+.hover-effect-cover > div.effect-to-right2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hover-effect-cover:hover > div.effect-to-right2 {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hover-effect-cover div.effect-to-right2 {
+    opacity: 0;
+    max-width: 480px;
+    max-height: 390px;
+    background-color: #95e1d3;
+    background-image: linear-gradient(0.0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);; /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+
+.hover-effect-cover:hover div.effect-to-right2 {
+    opacity: 0.9;
+    transform: translate(0px, 0px) rotate(0deg);
+}
 @media (max-width: 1200px ) {
     .container {
         max-width: 970px;
@@ -1226,10 +1278,12 @@ h2 {
         /*box-shadow: 0 0 8px rgb(238, 234, 234);*/
 
     }
-    .img2part{
+
+    .img2part {
         width: 300px;
         height: 200px;
     }
+
     .img-holder {
         display: flex;
         flex-wrap: wrap;
@@ -1303,6 +1357,7 @@ h2 {
         top: 0;
         left: 0;
     }
+
     .hover-effect-cover div.effect-to-right {
         max-width: 280px;
         max-height: 370px;
@@ -1329,6 +1384,12 @@ h2 {
         margin-left: 0;
 
     }
+    .psevdoElement {
+        padding-top: 55px;
+        padding-bottom: 0px;
+        margin-bottom: 50px;
+        margin-left: 436px;
+    }
 
 }
 
@@ -1337,10 +1398,12 @@ h2 {
     .picsStory {
         flex-wrap: wrap;
     }
-    .img2part{
+
+    .img2part {
         width: 380px;
         height: 250px;
     }
+
     .container {
         max-width: 750px;
     }
@@ -1387,13 +1450,16 @@ h2 {
         width: 390px;
         height: 600px;
     }
+
     .img5sec-folder {
         flex-wrap: wrap;
     }
+
     .img5sec {
         width: 380px;
         height: 470px;
     }
+
     .hover-effect-cover > div.effect-to-right {
         width: 100%;
         height: 100%;
@@ -1409,10 +1475,12 @@ h2 {
         top: 0;
         left: 0;
     }
-    .img5sec-folder{
+
+    .img5sec-folder {
         position: relative;
     }
-    .pics-folder{
+
+    .pics-folder {
         position: relative;
     }
 
@@ -1432,6 +1500,7 @@ h2 {
         opacity: 0.9;
         transform: translate(0px, 0px) rotate(0deg);
     }
+
     .pics2section {
         position: relative;
         text-align: center;
@@ -1451,7 +1520,8 @@ h2 {
     .peopleSay {
         flex-wrap: wrap;
     }
-    .pics-folder{
+
+    .pics-folder {
         position: relative;
     }
 
