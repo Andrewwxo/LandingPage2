@@ -120,12 +120,13 @@ header {
 
 a:focus {
     color: #dec751;
-    border-bottom: 1px solid #dec751;
+    border-bottom: 2px solid #dec751;
 }
 
 a:hover {
-    font-size: 17px;
     transition: 0.5s;
+    color: #dec751;
+    /*border-bottom: 2px solid #dec751;*/
 }
 
 .tittle-first {
